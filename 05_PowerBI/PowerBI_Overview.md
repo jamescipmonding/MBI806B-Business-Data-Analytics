@@ -35,23 +35,53 @@ directly in this repository. Screenshots of key dashboard views are provided
 to demonstrate analytical outputs and design intent.
 ---
 
-## Dashboard Sections Illustrated
+## Dashboard Pages and What They Show
 
-### Indicative Stock Valuation Overview
-Provides a high-level valuation snapshot using moving averages and
-derived valuation indicators to assess whether a stock is trading
-at a premium or discount relative to its indicative fair value.
+> Screenshots are stored in this folder as evidence of dashboard design and analytical outputs.
 
-### Market Overview
-Presents comparative stock performance, volatility levels,
-and closing price trends across multiple tickers to support
-cross-market analysis.
+### 1) Market Overview (`dashboard_01_market_overview.png`)
+Provides a high-level comparison of stock performance and volatility across
+multiple tickers.
 
-### Momentum & Trend-Based Decision Analysis
-Uses short-term and long-term moving averages to identify momentum,
-trend direction, and potential caution or reversal signals.
+Key views:
+- Stock closing prices over time (multi-ticker comparison)
+- **20-day volatility (%)** by stock
+- Short-term trend view using **5-day and 20-day moving averages**
+- Summary cards showing latest price, average daily return, and latest trading date
 
-### Risk & Return
-Visualises the relationship between daily returns and volatility,
-including risk-adjusted performance and cumulative returns to
-support investment-style evaluation.
+---
+
+### 2) Risk & Return (`dashboard_02_risk_return.png`)
+Summarises performance using a portfolio-style risk–return framework.
+
+Key views:
+- Scatter plot of **Average Daily Return vs 20-Day Volatility**
+- Risk-adjusted return comparison by stock
+- Cumulative return by year
+- Volatility trends by year and ticker
+
+---
+
+### 3) Momentum & Trend-Based Decision Analysis (`dashboard_03_momentum_trend.png`)
+Highlights short-term momentum and longer-term trend direction using moving
+average signals.
+
+Key indicators:
+- Close price vs **MA_20** and **MA_60**
+- Trend direction label (e.g., *Bullish* / *Bearish*)
+- Trend strength vs MA_60 (% difference)
+- Short-term momentum vs MA_20 (% difference)
+- Decision support label (e.g., *Caution*)
+
+---
+
+### 4) Indicative Stock Valuation Overview (`dashboard_04_indicative_valuation.png`)
+Provides a valuation-focused snapshot showing whether a stock is trading near
+its **indicative fair value**.
+
+Key indicators shown:
+- **Latest Stock Price**
+- **Indicative Fair Value (MA_60)**
+- **Indicative Valuation Index (IVI = Price ÷ MA_60)**
+- **Valuation Premium/Discount (%)**
+- Valuation remark (e.g., *Fairly Valued*, *Overvalued*, *Undervalued*)
