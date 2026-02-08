@@ -1,36 +1,86 @@
-# MBI806B – Business Data Analytics
+# MBI806B – Business Data Analytics Project
 
-This repository contains an end-to-end business data analytics project completed as part of the Master of Business Informatics & Analytics (MBI806B).
+## Project Overview
+This project was completed as part of **MBI806B – Business Data Analytics** at Yoobee Colleges.
+It demonstrates an end-to-end data analytics workflow, from raw data ingestion and cleaning
+through to structured storage, analysis, and insight generation.
 
-The project demonstrates practical application of SQL, Python, and Power BI to transform raw data into meaningful, decision-ready insights.
-
----
-
-## 🔍 Project Focus
-- Business-oriented data analytics
-- Insight generation rather than theoretical modelling
-- Clear communication of findings for decision-makers
+The project focuses on historical stock price data and applies data engineering,
+SQL analytics, and business intelligence techniques to support analytical decision-making.
 
 ---
 
-## 🛠 Tools & Technologies
-- SQL
-- Python
-- Power BI
+## Objectives
+- Design a structured data pipeline for raw time-series data
+- Apply ETL processes to clean and validate datasets
+- Store analytical data in a relational data warehouse
+- Perform SQL-based analysis on structured data
+- Present insights using business intelligence principles
 
 ---
 
-## 📁 Repository Structure
-This repository is intentionally structured to reflect a professional analytics workflow.
+## Data Overview
+- **Source:** Yahoo Finance (CSV exports)
+- **Data Type:** Historical daily stock prices
+- **Granularity:** Daily, per stock ticker
+- **Core Fields:** Date, Open, High, Low, Close, Volume
 
-Each folder represents a stage in the analytics lifecycle:
-- Project context
-- Data
-- Analysis
-- Visualisation
-- Insights
+Detailed data assumptions and preparation steps are documented in:
+02_Data/Data_Notes.md
 
 ---
 
-## 🧠 Notes
-This repository is curated as a **portfolio project** to showcase analytics capability, workflow discipline, and business thinking.
+## Technical Architecture
+The project follows a layered analytics architecture:
+
+Raw CSV Files  
+↓  
+Python ETL (Cleaning & Validation)  
+↓  
+SQLite Data Warehouse (fact_prices)  
+↓  
+SQL Analysis  
+↓  
+Power BI Visualisation & Insights  
+
+---
+
+## Tools & Technologies
+- **Python** – ETL pipeline (pandas, sqlite3)
+- **SQLite** – Data warehouse storage
+- **SQL** – Schema design and analytical queries
+- **Power BI** – Data visualisation and dashboarding
+- **GitHub** – Version control and project documentation
+
+---
+
+## Repository Structure
+01_Project_Overview/        Project context and scope  
+02_Data/                    Data notes and assumptions  
+03_SQL/                     SQL schema and queries  
+04_Python/                  Python ETL pipeline  
+05_PowerBI/                 Dashboard screenshots and notes  
+06_Insights_and_Findings/   Analytical insights and conclusions  
+
+---
+
+## Key Outputs
+- Automated Python ETL script for structured data loading
+- Relational fact table with enforced data integrity
+- SQL queries supporting analytical exploration
+- Business-focused insights derived from historical price trends
+
+---
+
+## Learning Outcomes
+This project demonstrates:
+- Practical data engineering and ETL design
+- Understanding of data warehousing concepts
+- Ability to translate raw data into structured insights
+- Clear documentation and analytical communication
+
+---
+
+## Disclaimer
+This project was completed for **educational purposes only**.
+The analysis is not intended for live trading or investment decision-making.
