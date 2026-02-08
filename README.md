@@ -84,3 +84,9 @@ This project demonstrates:
 ## Disclaimer
 This project was completed for **educational purposes only**.
 The analysis is not intended for live trading or investment decision-making.
+
+## Project Summary
+This project demonstrates an end-to-end business analytics workflow,
+from data preparation and transformation to visual analysis and
+business-oriented interpretation.
+
