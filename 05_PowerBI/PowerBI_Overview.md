@@ -33,3 +33,25 @@ The Power BI visuals were designed to support:
 Due to file size limitations, the Power BI (.pbix) file is not included
 directly in this repository. Screenshots of key dashboard views are provided
 to demonstrate analytical outputs and design intent.
+---
+
+## Dashboard Sections Illustrated
+
+### Indicative Stock Valuation Overview
+Provides a high-level valuation snapshot using moving averages and
+derived valuation indicators to assess whether a stock is trading
+at a premium or discount relative to its indicative fair value.
+
+### Market Overview
+Presents comparative stock performance, volatility levels,
+and closing price trends across multiple tickers to support
+cross-market analysis.
+
+### Momentum & Trend-Based Decision Analysis
+Uses short-term and long-term moving averages to identify momentum,
+trend direction, and potential caution or reversal signals.
+
+### Risk & Return
+Visualises the relationship between daily returns and volatility,
+including risk-adjusted performance and cumulative returns to
+support investment-style evaluation.
